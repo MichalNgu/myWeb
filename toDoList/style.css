@@ -107,3 +107,22 @@ ul li span {
 ul li span:hover {
     background: #edeef0;
 }
+
+@media (max-width: 540px) {
+    .container {
+        padding: 30px 20px 50px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    input {
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 16px;
+    }
+}

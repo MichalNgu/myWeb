@@ -29,6 +29,8 @@ body {
     min-height: 100vh;
     font-size: clamp(1rem, 2vw, 1.15rem);
     transition: background 0.5s;
+    cursor: url("img/cursor.cur"), auto;
+    scroll-behavior: smooth;
 }
 
 img {
@@ -46,6 +48,7 @@ a {
 
 a:hover {
     color: var(--secondary);
+    cursor: url("img/cursor2.cur"), pointer;
 }
 
 nav {
@@ -345,6 +348,7 @@ section .header {
 
 .projects .card .content img:hover {
     transform: scale(1.07);
+    cursor: url("img/cursor2.cur"), pointer;
 }
 
 .projects .card a {
@@ -355,6 +359,7 @@ section .header {
 
 .projects .card a:hover {
     color: var(--accent);
+    cursor: url("img/cursor2.cur"), pointer;
 }
 
 .projects .card p {
@@ -420,6 +425,7 @@ section .header {
     color: #000000;
     box-shadow: 0 2px 12px rgba(0,0,0,0.07);
     margin-bottom: 1rem;
+    cursor: url("img/cursor3.cur"), text;
 }
 
 .contact-left textarea {
@@ -439,6 +445,7 @@ section .header {
 .contact-left textarea:focus {
     border: 2px solid var(--primary);
     outline: none;
+    cursor: url("img/cursor3.cur"), text;
 }
 
 .contact-inputs::placeholder,
@@ -494,6 +501,7 @@ section .header {
     background: var(--primary);
     color: #fff;
     transform: scale(1.04);
+    cursor: url("img/cursor2.cur"), pointer;
 }
 
 .contact-left button:hover::before {
@@ -579,6 +587,7 @@ footer .colum .social a:hover {
     color: #fff;
     background-color: var(--primary);
     border-color: var(--primary);
+    cursor: url("img/cursor2.cur"), pointer;
 }
 
 .copyright {

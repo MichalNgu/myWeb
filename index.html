@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- pro ikonky -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <title>Michal Nguyen</title>
+</head>
+<body>
+    
+    <!-- navigace -->
+
+    <nav>
+        <div class="nav-logo">
+            <a href="#"></a>
+            <img src="img/logo.png" alt="">
+        </div>
+
+        <ul class="links">
+            <li class="link"><a href="#">Domov</a></li>
+            <li id="link1" class="link"><a href="#">Dovednosti</a></li>
+            <li id="link2" class="link"><a href="#">projekty</a></li>
+            <li id="link3" class="link"><a href="#">kontaktuj mě</a></li>
+            <li id="link4" class="link"><a href="#">about</a></li>
+            <!-- light and dark mode -->
+             <button id="theme-toggle" aria-label="Přepnout režim" title="Přepnout světlý/tmavý režim">
+              <i class="ri-sun-line"></i>
+              </button>
+        </ul>
+    </nav>
+
+    <!-- home page -->
+
+    <header class="container">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <div class="text">
+                <h3 class="prg">Jsem <span class="auto-type"></span></h3>
+            </div>
+            <h1 class="title">Michal Nguyen</h1>
+            <p class="description">Vítej na mým webu. Jmenuji se Michal, učím se programování 🚀. učím se hlavně <span class="span-text" data-text="Javascript">Javascript</span> <span class="span-text" data-text="Css">Css</span> a <span class="span-text" data-text="HTML">HTML</span>.</p>
+        </div>
+        <model-viewer
+        class="image" 
+        src="img/3d_computer__-_sketchfab_weekly_-_11_mar23.glb" 
+        alt="3D model" 
+        auto-rotate 
+        camera-controls 
+        style="width: 100%; height: 40vh;">
+    </model-viewe>
+    </header>
+
+    <!-- Dovednosti -->
+
+    <section class="container">
+        <h2 class="header">Moje Dovednosti</h2>
+        <div class="skills">
+            <div class="card">
+                <span><i class="ri-html5-line"></i></span>
+                <h3>HTML</h3>
+                <p>Mám základní zkusenosti s HTML</p>
+            </div>
+
+            <div class="card">
+                <span><i class="ri-css3-fill"></i></span>
+                <h3>CSS</h3>
+                <p>Mám základní zkusenosti s css</p>
+            </div>
+
+            <div class="card">
+                <span><i class="ri-javascript-line"></i></span>
+                <h3>JAVASRIPT</h3>
+                <p>Mám základní zkusenosti s JavaScriptem</p>
+            </div>
+
+            <div class="card">
+                <span><i class="ri-spy-line"></i></span>
+                <h3>PYTHON</h3>
+                <p>Mám základní zkusenosti s pythonem</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- projekty -->
+
+    <section class="container">
+        <h2 class="header">Projekty</h2>
+        <p class="sub-header">Tady jsou moje nejlepší projekty</p>
+        <div class="projects">
+
+            <!-- weather app-->
+
+            <div class="card">
+                <div class="content">
+                    <h3>Weather App</h3>
+                    <a href="https://github.com/MichalNgu/portfolio/tree/main/po%C4%8Das%C3%AD" target="_blank">odkaz na zdrojový kód <i class="ri-arrow-right-line"></i></a>
+                    <p>
+                        Web počasí funguje na způsob použití API z OpenWeatherMap. Web funguje zadáním města a poté
+                        to nalezne informace o počasi.
+                    </p>
+
+                    <a href="projects/počasí/index.html" target="_blank">
+                        <img src="img/wheaterApp.png" alt="">
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- to do list-->
+
+            <div class="card">
+                <div class="content">
+                    <h3>To do list</h3>
+                    <a href="https://github.com/MichalNgu/portfolio/tree/main/toDoList" target="_blank"> odkaz na zdrojový kód <i class="ri-arrow-right-line"></i></a>
+                    <p>
+                        To do list funguje na způsob zadání úkolu poté mužete zaškrtnout jestli je hotový nebo ne.
+                        Případně jde i odstranit úkol.
+                    </p>
+                    <a href="projects/toDoList/index.html" target="_blank">
+                        <img src="img/to-do-list.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <!-- čas-->
+
+            <div class="card">
+                <div class="content">
+                    <h3>čas</h3>
+                    <a href="https://github.com/MichalNgu/portfolio/tree/main/%C4%8Das" target="_blank">odkaz na zdrojový kód <i class="ri-arrow-right-line"></i></a>
+                    <p>
+                        Tenhle web funguje na způsob použití API. Web ukazuje aktuální čas(digitálně).
+                    </p>
+                        <a href="projects/čas/index.html" target="_blank">
+                            <img src="img/time-app.png" alt="">
+                        </a>
+                </div>
+            </div>
+
+            <!-- headphones slider-->
+
+            <div class="card">
+                <div class="content">
+                    <h3>headphones slider</h3>
+                    <a href="https://github.com/MichalNgu/portfolio/tree/main/headphones" target="_blank">odkaz na zdrojový kód <i class="ri-arrow-right-line"></i></a>
+                    <p>
+                        Tenhle web funguje na způzop prohlížení sluchátek a podrobnosti o tom.
+                    </p>
+                        <a href="projects/headphones/index.html" target="_blank">
+                            <img src="img/headphones.png" alt="">
+                        </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- kontakt -->
+
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2 class="header">Kontakt</h2>
+                <hr>
+            </div>           
+                <input type="hidden" name="access_key" value="20169d36-cc94-4095-bb59-db4309f80785">
+                <input type="text" name="name" placeholder="tvoje Jméno" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Tvůj email" class="contact-inputs" required>
+                <textarea name="message" placeholder="Zpráva" class="contact-inputs required"></textarea>
+            <button type="submit" alt="">odeslat</button>
+        </form>
+
+        <div class="contact-right">
+            <img src="img/right_img.png" alt="">
+        </div>
+    </div>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-- about -->
+
+    <footer class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="colum">
+            <div class="logo">
+                <img src="img/logo.png">
+            </div>
+            <p>
+                Vítej na mým webu. Jmenuji se Michal, učím se programování(hlavně vývoj webových stránek).
+            </p>
+            <div class="social">
+                <a href="https://github.com/MichalNgu" target="_blank"><i class="ri-github-line"></i></a>
+                <a href="https://www.instagram.com/_michal.cz_/" target="_blank"><i class="ri-instagram-line"></i></a>
+                <a href="https://www.tiktok.com/@ig_michal.cz_" target="_blank"><i class="ri-tiktok-line"></i></a>
+            </div>
+    </footer>
+
+    <!-- copyright -->
+
+    <div class="copyright">
+        <p>Copyright &copy; 2025 Michal Nguyen</p>
+    </div>
+
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- pro kontakt -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</html>
